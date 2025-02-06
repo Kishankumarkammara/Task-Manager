@@ -35,8 +35,8 @@ function Page() {
     try {
 
 
-      const url = `http://localhost:3001/auth/login`; 
-      //const url = `${process.env.NEXT_PUBLIC_BASE_URL}/auth/login`;
+      //const url = `http://localhost:3001/auth/login`; 
+      const url = `${process.env.NEXT_PUBLIC_BASE_URL}/auth/login`;
       console.log(url);
       const res = await fetch(url, {
         method: "POST",
